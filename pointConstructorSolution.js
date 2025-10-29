@@ -51,13 +51,12 @@ function Point(x, y) {
     part of the prototype.
     */
 
-    let point = Object.create(PointPrototype);
-    point.x = x;
-    point.y = y;
+    this.x = x;
+    this.y = y;
 
     this.print = function() {
         // Keep same format as above
-        console.log("(" + point.x + ", " + point.y + ")");
+        console.log("(" + this.x + ", " + this.y + ")");
     };
 }
 
